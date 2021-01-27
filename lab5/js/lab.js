@@ -15,8 +15,8 @@ year = "2017";
 age = 2021 - year;
 
 // output of the variables that were assigned.
-document.writeln("Make: " + make + "<br>");
-document.writeln("Model: " + model + "<br>");
-document.writeln("Color: " + color + "<br>");
-document.writeln("Year: " + year + "<br>");
-document.writeln("Age: " + age + " years<br>");
+document.writeln("<p><b> Make: </b>" + make + "<br> </p>");
+document.writeln("<p><b> Model: </b>" + model + "<br>");
+document.writeln("<p><b> Color: </b>" + color + "<br>");
+document.writeln("<p><b> Year: </b> " + year + "<br>");
+document.writeln("<p><b> Age: </b>" + age + " years <br></br>");
