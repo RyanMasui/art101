@@ -17,14 +17,14 @@ p {
 }
 
 #divcontent {
-  background-color: #e3e3e3;
+  background-color: #FFCCCB;
   border-style: solid;
   border: dashed 1px #000000;
   text-indent: 35px;
 }
 
 #divNameContent {
-  background-color: #FFFFFF;
+  background-color: #FFCCCB;
   text-align: 15px;
   border-style: solid;
   line-height: 4;
