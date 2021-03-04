@@ -9,12 +9,10 @@ $("#activate").click(runAPI);
 
 
 function runAPI() {
-  var input = $("#input").val();
-  var newUrl = "http://numbersapi.com/" + input;
 // Using the core $.ajax() method
 $.ajax({
     // The URL for the request (from the api docs)
-    url: newUrl,
+    url: "https://randomuser.me/api/?format=prettyJSON",
     // The data to send (will be converted to a query string)
     data: {
             // here is where any data required by the api
@@ -23,12 +21,14 @@ $.ajax({
     // Whether this is a POST or GET request
     type: "GET",
     // The type of data we expect back
-    dataType : "",
+    dataType : "json",
     // What do we do when the api call is successful
     //   all the action goes in here
     success: function(data) {
         // do stuff
-        printText(data);
+        console.log("This is working getting the information...");
+        var textData = JSON.stringify(data);
+        printText(textData);
         console.log(data);
     },
     // What we do if the api call fails
